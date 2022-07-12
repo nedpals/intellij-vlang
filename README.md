@@ -18,7 +18,7 @@ The soon-to-be-official plugin of the [V Language](https://github.com/vlang/v) f
 <!-- Plugin description end -->
 
 ## What's working
-- [ ] V Language Server (using [ballerina-platform/lsp4intellij](https://github.com/ballerina-platform-lsp4intellij) on master)
+- [ ] [V Language Server](https://github.com/vlang/vls) (using [ballerina-platform/lsp4intellij](https://github.com/ballerina-platform-lsp4intellij) on master)
   - [ ] Completion (I don't know why lol)
   - [x] Hover
   - [x] Diagnostics (V diagnostics' never fired because it never triggers `textDocument/didSave` but only `textDocument/willSave`)
