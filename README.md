@@ -17,6 +17,18 @@
 The soon-to-be-official plugin of the [V Language](https://github.com/vlang/v) for the IntelliJ Platform (IDEA, WebStorm, CLion, GoLand, etc.)
 <!-- Plugin description end -->
 
+## What's working
+- [ ] V Language Server (using [ballerina-platform/lsp4intellij](https://github.com/ballerina-platform-lsp4intellij) on master)
+  - [ ] Completion (I don't know why lol)
+  - [x] Hover
+  - [x] Diagnostics (V diagnostics' never fired because it never triggers `textDocument/didSave` but only `textDocument/willSave`)
+  - [x] Text Manipulation (works except when deleting characters and/or client sends negative/inaccurate positions)
+  - [ ] Go to Definition (the client does not understand the returned result the server provides)
+  - [ ] Formatting
+  - There are features not listed because of the LSP client does not fully implement the LSP spec
+- [ ] Syntax Highlighting (I was hoping [jetbrains/jsitter](https://github.com/jetbrains/jsitter) would work in order to utilize the existing tree-sitter grammar but anyway)
+- [ ] UI for Plugin Settings
+
 ## Installation
 
 - Using IDE built-in plugin system:
