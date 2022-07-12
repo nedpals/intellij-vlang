@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.nedpals.intellijvlang.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.nedpals.intellijvlang.MyBundle
 
 class MyApplicationService {
 
