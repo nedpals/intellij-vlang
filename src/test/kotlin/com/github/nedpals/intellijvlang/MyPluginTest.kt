@@ -1,4 +1,4 @@
-package com.github.nedpals.intellijvlang
+package xyz.nedpals.vlang
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.psi.xml.XmlFile
