@@ -3,6 +3,10 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 fun properties(key: String) = project.findProperty(key).toString()
 
+dependencies {
+    implementation("com.github.ballerina-platform:lsp4intellij:master-SNAPSHOT")
+}
+
 plugins {
     // Java support
     id("java")
@@ -22,6 +26,7 @@ version = properties("pluginVersion")
 // Configure project's dependencies
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
